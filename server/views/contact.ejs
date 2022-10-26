@@ -1,0 +1,44 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+
+
+<!--Main Content-->
+  <main class="container">
+    <div class="jumbotron">
+      <div class="para">
+        <h1 class="display-4">Contact Us!</h1>
+        <form method="post" action="mailto:lisa@mail.com">
+          First name: <input type="text" name="fname"><br><br>
+          Last name: <input type="text" name="lname"><br><br>
+          Contact Number: <input type="tel" name="tel"><br><br>
+          Email: <input type="email" name="email"><br><br>
+          <label for="message">Send us a message: </label><br><br>
+          <textarea name="message" cols="70" rows="4"></textarea><br><br>
+          
+          <input type = "submit" value = "Submit Form" href="/home">
+          <input type = "reset" value = "Clear Form" >
+        </form>
+      </div>
+      
+      
+
+    </div>
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
+
+
+
+
+
+
+
+
+
+
+

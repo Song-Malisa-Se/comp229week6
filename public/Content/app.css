@@ -1,0 +1,25 @@
+/*custom css goes here*/
+img{
+    margin: 10px 10px 10px 10px;
+    width: 460px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #777777;
+  
+  
+}
+
+
+.para{
+ 
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #313642;
+    padding: 10px;
+  
+  }
+  #portrait{
+    float:right;
+    height: 300px;
+    width: 225px;
+}
