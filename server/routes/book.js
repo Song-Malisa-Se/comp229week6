@@ -1,3 +1,6 @@
+/* SONG MALISA SE, student number: 301233051, 26 oct 2022 */
+
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -21,7 +24,7 @@ function requireAuth(req, res, next)
 
 
 /* Get Route for the Book List page - READ Operation */
-router.get('/', bookController.displayBookList);
+router.get('/',requireAuth, bookController.displayBookList);
 
 /* Get Route for displaying the Add page - CREATE Operation */
 router.get('/add', requireAuth, bookController.displayAddPage);

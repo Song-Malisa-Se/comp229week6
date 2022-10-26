@@ -1,3 +1,5 @@
+/* SONG MALISA SE, student number: 301233051, 26 oct 2022 */
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -40,7 +42,7 @@ module.exports.displayLoginPage =(req, res, next) => {
     }
     else
     {
-        return res.redirect('/');
+        return res.redirect('/book-list');
 
     }
 }
@@ -157,7 +159,7 @@ module.exports.processRegisterPage= (req, res, next) =>{
 module.exports.performLogout = (req, res, next) => {
     req.logout(function(err) {
         if (err) { return next(err);}
-        res.redirect('/');
+        res.redirect('/login');
     });
     
 }

@@ -1,3 +1,5 @@
+/* SONG MALISA SE, student number: 301233051, 26 oct 2022 */
+
 let mongoose = require('mongoose');
 
 // create a model class

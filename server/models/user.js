@@ -1,3 +1,5 @@
+/* SONG MALISA SE, student number: 301233051, 26 oct 2022 */
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocationMongoose = require('passport-local-mongoose');

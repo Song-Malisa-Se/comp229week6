@@ -7,25 +7,49 @@
 
 <!--Main Content-->
   <main class="container">
-    <div class="jumbotron">
-      <div class="para">
-        <h1 class="display-4">Contact Us!</h1>
-        <form method="post" action="mailto:lisa@mail.com">
-          First name: <input type="text" name="fname"><br><br>
-          Last name: <input type="text" name="lname"><br><br>
-          Contact Number: <input type="tel" name="tel"><br><br>
-          Email: <input type="email" name="email"><br><br>
-          <label for="message">Send us a message: </label><br><br>
-          <textarea name="message" cols="70" rows="4"></textarea><br><br>
-          
-          <input type = "submit" value = "Submit Form" href="/home">
-          <input type = "reset" value = "Clear Form" >
-        </form>
-      </div>
-      
-      
+    <div class="row">
+      <div class="offset-md-4 col-md-4">
+          <h1>Contact Me!</h1>
+          <form method="POST" action="mailto:lisa@email.com">
+              <fieldset class="form-group">
+                  <label for="username">Name: </label>
+                  <input type="text" class="form-control"
+                  name="username"
+                  id="username" required autofocus>
+              </fieldset>
 
-    </div>
+              <fieldset class="form-group">
+                <label for="username">Tel: </label>
+                <input type="text" class="form-control"
+                name="username"
+                id="username" required autofocus>
+            </fieldset>
+  
+              <fieldset class="form-group">
+                  <label for="email">Email: </label>
+                  <input type="email" class="form-control"
+                  name="email"
+                  id="email" required>
+                  
+              </fieldset>
+
+              <div class="form-group">
+                <label for="sendAMessage">Send me a message: </label>
+                <textarea type="text" class="form-control"
+                id ="descriptionTextArea"
+                name="description" required></textarea>
+            </div>
+  
+              <fieldset class="form-group text-right">
+                  <input type="submit" class="btn btn-success" value="Submit Message!">
+                  <a href="/">
+                      <input type="button" class="btn btn-warning" value="Cancel">
+                  </a>
+              </fieldset>
+  
+          </form>
+      </div>
+  </div>
   </main>
   
 <%- include partials/bottom_nav.ejs %>

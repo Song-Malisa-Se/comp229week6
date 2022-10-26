@@ -10,30 +10,30 @@
 
         <form class="form" method="POST">
             <div class="form-group">
-                <label for="nameTextField">Book Title</label>
+                <label for="nameTextField">Contact Name</label>
                 <input type="text" class="form-control"
                 id ="nameTextField"
-                placeholder="Enter the Book Title"
+                placeholder="Enter the Contact Name"
                 name="name"
                 value="<%= book.name %>"
                 required>
             </div>
 
             <div class="form-group">
-                <label for="authorTextField">Author</label>
+                <label for="authorTextField">Contact Number</label>
                 <input type="text" class="form-control"
                 id ="authorTextField"
-                placeholder="Enter the Book's author"
+                placeholder="Enter the Contact Number"
                 name="author"
                 value="<%= book.author %>"
                 required>
             </div>
 
             <div class="form-group">
-                <label for="publishedTextField">Year</label>
-                <input type="text" class="form-control"
+                <label for="publishedTextField">Email</label>
+                <input type="email" class="form-control"
                 id ="publishedTextField"
-                placeholder="Enter the Year of Publication"
+                placeholder="Enter the Email Address"
                 name="published" 
                 value="<%= book.published %>"
                 required>
@@ -43,21 +43,11 @@
                 <label for="descriptionTextArea">Description</label>
                 <textarea type="text" class="form-control"
                 id ="descriptionTextArea"
-                placeholder="Enter a brief description of the book"
+                placeholder="Enter a brief description of the Contact"
                 name="description"
                 required>
                 <%= book.description %>
                 </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="priceTextField">Price</label>
-                <input type="text" class="form-control"
-                id ="priceTextFiel"
-                placeholder="Enter the Book's Price"
-                name="price"
-                value="<%= book.price %>"
-                required>
             </div>
 
             <button class="btn btn-primary" type="submit">
